@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Aptos', 'Segoe UI Variable Text', sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(14, 165, 233, 0.14), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.12), transparent 28%),
+    #020617;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-3xl border border-white/10 bg-slate-950/75 shadow-soft backdrop-blur-xl;
+  }
+
+  .section-title {
+    @apply text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300;
+  }
+}
